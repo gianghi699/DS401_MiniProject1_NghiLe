@@ -1,0 +1,18 @@
+# function to calculate the determinant of a 2x2 matrix such that 
+# a and b are elements in the first row, c and d are elements in the second row
+def det_of_2x2_matrix(a,b,c,d):
+    det_2 = a*d - b*c
+    print(det_2)
+
+#test the function by entering the entries row wise (a->b->c->d)
+det_of_2x2_matrix(1,2,3,4)
+
+
+# function to calculate the determinant of a 3x3 matrix such that
+# (a, b, c), (p,q,r) and (x,y,z) are three rows of the 3x3 matrix respectively
+def det_of_3x3_matrix(a,b,c,p,q,r,x,y,z):
+    det_3 = a*q*z + b*r*x + c*p*y - a*r*y - b*p*z - c*q*x  #proved in slides and reports
+    print(det_3)
+    
+#test
+det_of_3x3_matrix(1,2,3,4,5,6,7,8,9)
